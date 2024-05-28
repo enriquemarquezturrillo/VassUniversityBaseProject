@@ -84,10 +84,6 @@ flexbox = "3.0.0"
 #SecretsGradlePlugin
 secretsGradlePlugin = "2.0.1"
 
-#KotlinParcelize
-kotlinParcelizePlugin = "1.9.23"
-
-
 [libraries]
 #Android
 androidxCoreKtx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -196,6 +192,7 @@ jupiterTestImplementation = ["junitJupiterApi", "androidxCoreTesting", "kotlinCo
 [plugins]
 pluginAndroidApplication = { id = "com.android.application", version.ref = "pluginAndroidApplication" }
 pluginJetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "pluginKotlin" }
+kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "pluginKotlin" }
 pluginDaggerHilt = { id = "com.google.dagger.hilt.android", version.ref = "pluginDaggerHilt" }
 pluginDevKsp = { id = "com.google.devtools.ksp", version.ref = "pluginDevKsp" }
 pluginGoogleServices = { id = "com.google.gms.google-services", version.ref = "pluginGoogleServices" }
@@ -203,6 +200,4 @@ pluginFirebaseCrashlytics = { id = "com.google.firebase.crashlytics", version.re
 pluginUndercouchDownload = { id = "de.undercouch.download", version.ref = "pluginUndercouchDownload" }
 pluginNavigationSafeArgs = { id = "androidx.navigation.safeargs.kotlin", version.ref = "pluginNavigationSafeArgs" }
 pluginSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "pluginSerialization" }
-kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlinParcelizePlugin" }
 pluginSecretGradle = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "secretsGradlePlugin" }
-
