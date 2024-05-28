@@ -1,26 +1,208 @@
 [versions]
-agp = "8.3.2"
-kotlin = "1.9.0"
+#Plugins
+pluginAndroidApplication = "8.3.2"
+pluginKotlin = "1.9.23"
+pluginDaggerHilt = "2.48"
+pluginDevKsp = "1.9.23-1.0.20"
+pluginGoogleServices = "4.4.1"
+pluginFirebaseCrashlytics = "3.0.1"
+pluginUndercouchDownload = "5.5.0"
+pluginNavigationSafeArgs = "2.7.7"
+pluginSerialization = "1.9.23"
+
+#Android
 coreKtx = "1.13.1"
-junit = "4.13.2"
-junitVersion = "1.1.5"
-espressoCore = "3.5.1"
-appcompat = "1.6.1"
+coreSplash = "1.0.1"
+appCompat = "1.6.1"
+constraitLayout = "2.1.4"
+swipeRefreshLayout = "1.1.0"
 material = "1.12.0"
-activity = "1.8.0"
-constraintlayout = "2.1.4"
+playServicesMaps = "18.2.0"
+
+#Navigation
+androidxNavigation = "2.7.7"
+
+#Hilt
+hilt = "2.48.1"
+
+#Lifecycle
+lifecycle = "2.7.0"
+
+#Coroutines
+coroutines = "1.8.0"
+
+#Testing
+junitJupiterTesting = "5.10.1"
+androidCoreTesting = "2.2.0"
+coroutinesTesting = "1.8.0"
+
+#Mockito
+mockitoCore = "5.9.0"
+mockitoInline = "5.2.0"
+mockitoKotlin = "2.2.0"
+
+#Espresso
+espresso = "3.5.1"
+
+#Retrofit
+retrofit = "2.9.0"
+retrofitLogging = "4.12.0"
+
+#OkHttp
+okhttp = "4.12.0"
+gson = "2.10.1"
+
+#Volley
+volley = "1.2.1"
+
+#Json
+json = "1.5.1"
+
+#Glide
+glide = "4.16.0"
+glideVectorCaveRock = "1.4"
+
+#Firebase
+firebaseBom = "33.0.0"
+firebaseMessaging = "24.0.0"
+firebaseCrashlytics = "19.0.0"
+firebaseAnalitics = "22.0.0"
+firebaseDatabase = "21.0.0"
+
+#Biometric
+biometric = "1.1.0"
+
+#Crypto SharedPreferences
+cryptoSharedPreferences = "1.0.0"
+
+#Browser CustomTab
+customTab = "1.8.0"
+
+#Flexbox
+flexbox = "3.0.0"
+
+#SecretsGradlePlugin
+secretsGradlePlugin = "2.0.1"
+
+#KotlinParcelize
+kotlinParcelizePlugin = "1.9.23"
+
 
 [libraries]
-androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
-junit = { group = "junit", name = "junit", version.ref = "junit" }
-androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
-androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
-androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
-material = { group = "com.google.android.material", name = "material", version.ref = "material" }
-androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
-androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+#Android
+androidxCoreKtx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidxCoreSplash = { group = "androidx.core", name = "core-splashscreen", version.ref = "coreSplash" }
+androidxAppcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appCompat" }
+androidxConstraitLayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraitLayout" }
+androidxSwipeRefresh = { group = "androidx.swiperefreshlayout", name = "swiperefreshlayout", version.ref = "swipeRefreshLayout" }
+androidMaterial = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidPlayServicesMaps = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "playServicesMaps" }
+
+#Navigation
+androidxNavigationFragment = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "androidxNavigation" }
+androidxNavigationUI = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "androidxNavigation" }
+androidxNavigationDynamicFragment = { group = "androidx.navigation", name = "navigation-dynamic-features-fragment", version.ref = "androidxNavigation" }
+androidxNavigationCompose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "androidxNavigation" }
+androidxNavigationTesting = { group = "androidx.navigation", name = "navigation-testing", version.ref = "androidxNavigation" }
+
+#Hilt
+daggerHilt = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+daggerHiltCompiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt" }
+
+#Lifecycle
+androidxLivecycleLivedata = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycle" }
+androidxLivecycleRuntime = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle" }
+androidxLivecycleViewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+
+#Coroutines
+coroutinesCore = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutines" }
+coroutinesAndroid = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutines" }
+
+#Test
+junitJupiter = { group = "org.junit.jupiter", name = "junit-jupiter", version.ref = "junitJupiterTesting" }
+junitJupiterApi = { group = "org.junit.jupiter", name = "junit-jupiter-api", version.ref = "junitJupiterTesting" }
+junitJupiterEngine = { group = "org.junit.jupiter", name = "junit-jupiter-engine", version.ref = "junitJupiterTesting" }
+androidxCoreTesting = { group = "androidx.arch.core", name = "core-testing", version.ref = "androidCoreTesting" }
+kotlinCoroutinesTesting = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutinesTesting" }
+
+#Mockito
+mockitoTestCore = { group = "org.mockito", name = "mockito-core", version.ref = "mockitoCore" }
+mockitoTestInline = { group = "org.mockito", name = "mockito-inline", version.ref = "mockitoInline" }
+mockitoTestKotlin = { group = "com.nhaarman.mockitokotlin2", name = "mockito-kotlin", version.ref = "mockitoKotlin" }
+
+#Espresso
+espressoCore = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso" }
+espressoIntent = { group = "androidx.test.espresso", name = "espresso-intents", version.ref = "espresso" }
+espressoContrib = { group = "androidx.test.espresso", name = "espresso-contrib", version.ref = "espresso" }
+
+#Retrofit
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofitGson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
+retrofitSimpleXML = { group = "com.squareup.retrofit2", name = "converter-simplexml", version.ref = "retrofit" }
+retrofitScalars = { group = "com.squareup.retrofit2", name = "converter-scalars", version.ref = "retrofit" }
+retrofitInterceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "retrofitLogging" }
+
+#OkHttp
+okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
+
+#Volley
+volley = { group = "com.android.volley", name = "volley", version.ref = "volley" }
+
+#Json
+json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "json" }
+
+#Glide
+glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
+glideCompiler = { group = "com.github.bumptech.glide", name = "compiler", version.ref = "glide" }
+glideKsp = { group = "com.github.bumptech.glide", name = "ksp", version.ref = "glide" }
+glideSVG = { group = "com.caverock", name = "androidsvg", version.ref = "glideVectorCaveRock" }
+
+#Firebase
+firebaseBom = { group = "com.google.firebase", name = "firebase-bom", version.ref = "firebaseBom" }
+firebaseMessaging = { group = "com.google.firebase", name = "firebase-messaging-ktx", version.ref = "firebaseMessaging" }
+firebaseCrashlytics = { group = "com.google.firebase", name = "firebase-crashlytics-ktx", version.ref = "firebaseCrashlytics" }
+firebaseAnalitics = { group = "com.google.firebase", name = "firebase-analytics-ktx", version.ref = "firebaseAnalitics" }
+firebaseDatabase = { group = "com.google.firebase", name = "firebase-database-ktx", version.ref = "firebaseDatabase" }
+
+
+#Biometric
+androidxBiometric = { group = "androidx.biometric", name = "biometric", version.ref = "biometric" }
+
+#Crypto SharedPreferences
+androidxCryptoSharedPreferences = { group = "androidx.security", name = "security-crypto", version.ref = "cryptoSharedPreferences" }
+
+#Browser CustomTab
+androidxCustomTab = { group = "androidx.browser", name = "browser", version.ref = "customTab" }
+
+#Flexbox
+flexbox = { group = "com.google.android.flexbox", name = "flexbox", version.ref = "flexbox" }
+
+
+[bundles]
+android = ["androidxCoreKtx", "androidxCoreSplash", "androidxAppcompat", "androidxConstraitLayout", "androidxSwipeRefresh", "androidMaterial", "androidPlayServicesMaps"]
+navigation = ["androidxNavigationFragment", "androidxNavigationUI", "androidxNavigationDynamicFragment", "androidxNavigationCompose"]
+lifecycle = ["androidxLivecycleLivedata", "androidxLivecycleRuntime", "androidxLivecycleViewmodel"]
+coroutines = ["coroutinesCore", "coroutinesAndroid"]
+retrofit = ["retrofit", "retrofitGson", "retrofitSimpleXML", "retrofitScalars", "retrofitInterceptor"]
+glide = ["glide", "glideSVG"]
+glideKsp = ["glideCompiler", "glideKsp"]
+firebase = ["firebaseBom", "firebaseMessaging", "firebaseCrashlytics", "firebaseAnalitics", "firebaseDatabase"]
+mockito = ["mockitoTestCore", "mockitoTestInline", "mockitoTestKotlin"]
+espresso = ["espressoCore", "espressoIntent", "espressoContrib"]
+jupiterTestImplementation = ["junitJupiterApi", "androidxCoreTesting", "kotlinCoroutinesTesting"]
+
 
 [plugins]
-androidApplication = { id = "com.android.application", version.ref = "agp" }
-jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+pluginAndroidApplication = { id = "com.android.application", version.ref = "pluginAndroidApplication" }
+pluginJetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "pluginKotlin" }
+pluginDaggerHilt = { id = "com.google.dagger.hilt.android", version.ref = "pluginDaggerHilt" }
+pluginDevKsp = { id = "com.google.devtools.ksp", version.ref = "pluginDevKsp" }
+pluginGoogleServices = { id = "com.google.gms.google-services", version.ref = "pluginGoogleServices" }
+pluginFirebaseCrashlytics = { id = "com.google.firebase.crashlytics", version.ref = "pluginFirebaseCrashlytics" }
+pluginUndercouchDownload = { id = "de.undercouch.download", version.ref = "pluginUndercouchDownload" }
+pluginNavigationSafeArgs = { id = "androidx.navigation.safeargs.kotlin", version.ref = "pluginNavigationSafeArgs" }
+pluginSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "pluginSerialization" }
+kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlinParcelizePlugin" }
+pluginSecretGradle = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "secretsGradlePlugin" }
 

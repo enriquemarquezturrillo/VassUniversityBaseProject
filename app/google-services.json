@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "807476330023",
+    "project_id": "vassuniversitybaseproject",
+    "storage_bucket": "vassuniversitybaseproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:807476330023:android:dd2934c183eee1b89f9802",
+        "android_client_info": {
+          "package_name": "com.vasscompany.vassuniversitybaseproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVRqzvdrR_theDufvOXqIbIocIJ4tN0TI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:807476330023:android:42c92ef1eabfa00e9f9802",
+        "android_client_info": {
+          "package_name": "com.vasscompany.vassuniversitybaseproject.des"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVRqzvdrR_theDufvOXqIbIocIJ4tN0TI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:807476330023:android:1feac8ed74e66e099f9802",
+        "android_client_info": {
+          "package_name": "com.vasscompany.vassuniversitybaseproject.pro"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVRqzvdrR_theDufvOXqIbIocIJ4tN0TI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
