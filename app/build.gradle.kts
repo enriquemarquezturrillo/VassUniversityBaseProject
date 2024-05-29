@@ -67,11 +67,11 @@ android {
             resValue("string", "app_name", "QA VUBaseProject")
             applicationIdSuffix = ".des"
 
-            buildConfigField("String", "BASE_URL_VASS_UNIVERSITY_BASE_PROJECT", "\"https://vassuniversity-qa.baseproject.com/\"")
+            buildConfigField("String", "BASE_URL_VASS_UNIVERSITY_BASE_PROJECT", "\"https://pokeapi.co/api/v2/\"")
         }
 
         create("pro") {
-            buildConfigField("String", "BASE_URL_VASS_UNIVERSITY_BASE_PROJECT", "\"https://vassuniversity.baseproject.com/\"")
+            buildConfigField("String", "BASE_URL_VASS_UNIVERSITY_BASE_PROJECT", "\"https://pokeapi.co/api/v2/\"")
         }
 
         create("qapro") {

@@ -11,7 +11,7 @@ interface ApiServicesBaseProject {
     //############
 
     //Test Pokemon
-    @GET("http://pokeapi.co/api/v2/pokemon")
+    @GET("pokemon")
     suspend fun getListPokemon(
         @Query("limit") limit: Int,
         @Query("offset") offset: Int,
