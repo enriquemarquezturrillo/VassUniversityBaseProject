@@ -1,0 +1,112 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="80dp"
+    android:height="80dp"
+    android:viewportWidth="72"
+    android:viewportHeight="72">
+    <path
+        android:pathData="M19.2999,7.1L22.6999,12.9"
+        android:strokeLineJoin="round"
+        android:strokeWidth="4"
+        android:fillColor="#00000000"
+        android:strokeColor="#374147"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M36,2.7V9.4V2.7Z"
+        android:strokeAlpha="0.08"
+        android:strokeLineJoin="round"
+        android:strokeWidth="4"
+        android:fillColor="#00000000"
+        android:strokeColor="#374147"
+        android:fillAlpha="0.08"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M52.6999,7.1L49.3999,12.9L52.6999,7.1Z"
+        android:strokeAlpha="0.16"
+        android:strokeLineJoin="round"
+        android:strokeWidth="4"
+        android:fillColor="#00000000"
+        android:strokeColor="#374147"
+        android:fillAlpha="0.16"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M64.9,19.3L59.1,22.6L64.9,19.3Z"
+        android:strokeAlpha="0.24"
+        android:strokeLineJoin="round"
+        android:strokeWidth="4"
+        android:fillColor="#00000000"
+        android:strokeColor="#374147"
+        android:fillAlpha="0.24"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M69.3,36H62.6H69.3Z"
+        android:strokeAlpha="0.32"
+        android:strokeLineJoin="round"
+        android:strokeWidth="4"
+        android:fillColor="#00000000"
+        android:strokeColor="#374147"
+        android:fillAlpha="0.32"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M64.9,52.7L59.1,49.4L64.9,52.7Z"
+        android:strokeAlpha="0.4"
+        android:strokeLineJoin="round"
+        android:strokeWidth="4"
+        android:fillColor="#00000000"
+        android:strokeColor="#374147"
+        android:fillAlpha="0.4"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M52.6999,64.9L49.3999,59.1L52.6999,64.9Z"
+        android:strokeAlpha="0.48"
+        android:strokeLineJoin="round"
+        android:strokeWidth="4"
+        android:fillColor="#00000000"
+        android:strokeColor="#374147"
+        android:fillAlpha="0.48"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M36,69.3V62.6V69.3Z"
+        android:strokeAlpha="0.56"
+        android:strokeLineJoin="round"
+        android:strokeWidth="4"
+        android:fillColor="#00000000"
+        android:strokeColor="#374147"
+        android:fillAlpha="0.56"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M19.2999,64.9L22.5999,59.1L19.2999,64.9Z"
+        android:strokeAlpha="0.64"
+        android:strokeLineJoin="round"
+        android:strokeWidth="4"
+        android:fillColor="#00000000"
+        android:strokeColor="#374147"
+        android:fillAlpha="0.64"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M7.1,52.7L12.9,49.4L7.1,52.7Z"
+        android:strokeAlpha="0.72"
+        android:strokeLineJoin="round"
+        android:strokeWidth="4"
+        android:fillColor="#00000000"
+        android:strokeColor="#374147"
+        android:fillAlpha="0.72"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M2.6999,36H9.4H2.6999Z"
+        android:strokeAlpha="0.8"
+        android:strokeLineJoin="round"
+        android:strokeWidth="4"
+        android:fillColor="#00000000"
+        android:strokeColor="#374147"
+        android:fillAlpha="0.8"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M7.1,19.3L12.9,22.6L7.1,19.3Z"
+        android:strokeAlpha="0.88"
+        android:strokeLineJoin="round"
+        android:strokeWidth="4"
+        android:fillColor="#00000000"
+        android:strokeColor="#374147"
+        android:fillAlpha="0.88"
+        android:strokeLineCap="round" />
+</vector>

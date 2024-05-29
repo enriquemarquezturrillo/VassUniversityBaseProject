@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--FONTS-->
+    <style name="plusJakartaSansW300Light">
+        <item name="android:fontFamily">@font/plus_jakarta_sans_light</item>
+    </style>
+
+    <style name="plusJakartaSansW400Regular">
+        <item name="android:fontFamily">@font/plus_jakarta_sans_regular</item>
+    </style>
+
+    <style name="plusJakartaSansW500Medium">
+        <item name="android:fontFamily">@font/plus_jakarta_sans_medium</item>
+    </style>
+
+    <style name="plusJakartaSansW600SemiBold">
+        <item name="android:fontFamily">@font/plus_jakarta_sans_semi_bold</item>
+    </style>
+
+    <style name="plusJakartaSansW700Bold">
+        <item name="android:fontFamily">@font/plus_jakarta_sans_bold</item>
+    </style>
+
+    <style name="plusJakartaSanskW400Italic">
+        <item name="android:fontFamily">@font/plus_jakarta_sans_italic</item>
+    </style>
+
+    <!--Texts Style-->
+    <style name="plusJakartaSansRegular14h20w400" parent="plusJakartaSansW400Regular">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+    </style>
+
+    <style name="plusJakartaSansRegular16h24w400" parent="plusJakartaSansW400Regular">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:lineSpacingExtra">8sp</item>
+    </style>
+
+    <style name="plusJakartaSansMedium14h20w500" parent="plusJakartaSansW500Medium">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+    </style>
+
+    <style name="plusJakartaSansMedium16h20w500" parent="plusJakartaSansW500Medium">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+    </style>
+
+    <style name="plusJakartaSansMedium22h24w500" parent="plusJakartaSansW500Medium">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+    </style>
+
+    <style name="plusJakartaSansBold14h24w700" parent="plusJakartaSansW700Bold">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:lineSpacingExtra">10sp</item>
+    </style>
+
+    <style name="plusJakartaSansBold24h24w700" parent="plusJakartaSansW700Bold">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="plusJakartaSansBold24h30w700" parent="plusJakartaSansW700Bold">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+    </style>
+
+    <!--DIALOG FRAGMENT TRANSACTIONS FILTERS-->
+    <style name="DialogTheme" parent="Theme.baseproject">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/blueLight15B7D0</item>
+    </style>
+
+    <!--Popups-->
+    <style name="textTitleBottomSheet" parent="plusJakartaSansBold24h24w700">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="textMessageBottomSheet" parent="plusJakartaSansMedium16h20w500">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="backgroundBottomSheetDialog">
+        <item name="android:background">@drawable/background_bottom_sheet_top_rounded</item>
+    </style>
+
+    <style name="backgroundBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <!--Loading-->
+    <style name="textLoading" parent="plusJakartaSansMedium14h20w500" />
+
+    <!--Icons-->
+    <style name="defaultIconColor">
+        <item name="tint">@color/iconColor</item>
+    </style>
+
+    <!--Buttons-->
+    <style name="normalButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/plus_jakarta_sans_bold</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="minHeight">48dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <style name="outlineButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/plus_jakarta_sans_bold</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="minHeight">48dp</item>
+        <item name="strokeWidth">@dimen/strokeButtonOutline</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+    <style name="greenButton" parent="normalButton">
+        <item name="backgroundTint">@color/btn_green</item>
+        <item name="backgroundTintMode">screen</item>
+        <item name="android:textColor">@color/blue235172</item>
+        <item name="cornerRadius">@dimen/radiusButtons</item>
+    </style>
+
+    <style name="greenOutlineButton" parent="outlineButton">
+        <item name="strokeColor">@color/orangeLightD2A14C</item>
+        <item name="android:textColor">@color/orangeLightD2A14C</item>
+        <item name="cornerRadius">@dimen/radiusButtons</item>
+    </style>
+
+    <!--Backgrounds-->
+    <style name="bgDiagonal2d5fbf_062256">
+        <item name="android:background">@drawable/baseproject_gradient_diagonal_2d5fbf_062256</item>
+    </style>
+
+    <!--Toolbar-->
+    <style name="toolbarHeader" parent="plusJakartaSansMedium22h24w500">
+        <item name="android:gravity">center</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!--EditText-->
+    <style name="textInputEditTextFilled" parent="plusJakartaSansMedium14h20w500">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textCursorDrawable">@drawable/black_cursor</item>
+    </style>
+
+    <style name="textInputEditTextSearchTheme" parent="plusJakartaSansRegular14h20w400">
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="colorAccent">@color/gray</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/white</item>
+    </style>
+
+    <!--Texts-->
+    <style name="textIconBottom" parent="plusJakartaSansRegular14h20w400" />
+
+    <style name="textLabelEditText" parent="plusJakartaSansBold14h24w700">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="textInfo" parent="plusJakartaSansRegular16h24w400">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="textLinkUnderline" parent="plusJakartaSansRegular16h24w400">
+        <item name="android:textColor">@color/orangeLightD2A14C</item>
+    </style>
+
+    <!--EditText-->
+    <style name="roundedEditText384E78">
+        <item name="android:background">@drawable/edittext_background_384e78</item>
+        <item name="android:padding">13dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingEnd">13dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!--DrawerMenu-->
+    <style name="backgroundClMenuDrawer">
+        <item name="android:background">@drawable/background_drawer_menu</item>
+    </style>
+
+</resources>

@@ -1,0 +1,18 @@
+<resources>
+
+    <dimen name="elevation_bottom_bar_buttons">18dp</dimen>
+    <dimen name="elevation_popups">20dp</dimen>
+    <dimen name="toolbar_margin_title_zero_buttons">8dp</dimen>
+    <dimen name="toolbar_margin_title_one_buttons">38dp</dimen>
+    <dimen name="toolbar_margin_title_two_buttons">76dp</dimen>
+    <dimen name="toolbar_margin_title_three_buttons">114dp</dimen>
+    <dimen name="toolbar_margin_title_four_buttons">152dp</dimen>
+
+    <dimen name="radiusButtons">7dp</dimen>
+    <dimen name="strokeButtonOutline">2dp</dimen>
+
+    <!--Layout config viewPager -->
+    <dimen name="pageMargin">12dp</dimen>
+    <dimen name="pagerWidth">350dp</dimen>
+
+</resources>

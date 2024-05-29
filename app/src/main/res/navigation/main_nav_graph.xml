@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.vasscompany.vassuniversitybaseproject.ui.dashboard.DashboardFragment"
+        android:label="DashboardFragment"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_dashboardFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_listDifferentCellsFragment"
+            app:destination="@id/listDifferentCellsFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_afragment"
+            app:destination="@id/afragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.vasscompany.vassuniversitybaseproject.ui.list.ListFragment"
+        android:label="ListFragment" />
+
+    <fragment
+        android:id="@+id/listDifferentCellsFragment"
+        android:name="com.vasscompany.vassuniversitybaseproject.ui.list_different_cells.ListDifferentCellsFragment"
+        android:label="ListDifferentCellsFragment" />
+
+    <fragment
+        android:id="@+id/afragment"
+        android:name="com.vasscompany.vassuniversitybaseproject.ui.navigation.AFragment"
+        android:label="AFragment">
+        <argument
+            android:name="textByArgument"
+            android:defaultValue="a"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_afragment_to_bfragment"
+            app:destination="@id/bfragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/bfragment"
+        android:name="com.vasscompany.vassuniversitybaseproject.ui.navigation.BFragment"
+        android:label="BFragment">
+        <argument
+            android:name="textByArgument"
+            app:argType="string" />
+        <argument
+            android:name="textByArgumentTwo"
+            app:argType="string" />
+        <argument
+            android:name="numberByArgument"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_bfragment_to_cfragment"
+            app:destination="@id/cfragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cfragment"
+        android:name="com.vasscompany.vassuniversitybaseproject.ui.navigation.CFragment"
+        android:label="CFragment">
+        <argument
+            android:name="textByArgument"
+            android:defaultValue="c"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_cfragment_to_dfragment"
+            app:destination="@id/dfragment" />
+        <action
+            android:id="@+id/action_cfragment_to_dfragment_back_a"
+            app:destination="@id/dfragment"
+            app:popUpTo="@id/afragment" />
+        <action
+            android:id="@+id/action_cfragment_to_dfragment_back_exit"
+            app:destination="@id/dfragment"
+            app:popUpTo="@id/dashboardFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/dfragment"
+        android:name="com.vasscompany.vassuniversitybaseproject.ui.navigation.DFragment"
+        android:label="DFragment">
+        <argument
+            android:name="textByArgument"
+            android:defaultValue="d"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_dfragment_to_efragment"
+            app:destination="@id/efragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/efragment"
+        android:name="com.vasscompany.vassuniversitybaseproject.ui.navigation.EFragment"
+        android:label="EFragment">
+        <argument
+            android:name="textByArgument"
+            android:defaultValue="e"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_efragment_to_ffragment"
+            app:destination="@id/ffragment"
+            app:popUpTo="@id/efragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ffragment"
+        android:name="com.vasscompany.vassuniversitybaseproject.ui.navigation.FFragment"
+        android:label="FFragment">
+        <argument
+            android:name="textByArgument"
+            android:defaultValue="f"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_ffragment_to_efragment"
+            app:destination="@id/efragment"
+            app:popUpTo="@id/ffragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_ffragment_to_bfragment"
+            app:destination="@id/bfragment"
+            app:popUpTo="@id/bfragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_ffragment_to_dfragment"
+            app:destination="@id/dfragment"
+            app:popUpTo="@id/dfragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+</navigation>

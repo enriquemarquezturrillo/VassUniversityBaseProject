@@ -1,0 +1,10 @@
+<resources>
+
+    <style name="Theme.baseproject.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/blue235172</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/icon_logo_letter</item>
+        <item name="windowSplashScreenAnimationDuration">1000</item>
+        <item name="postSplashScreenTheme">@style/Theme.baseproject</item>
+        <item name="android:windowSplashScreenBrandingImage">@drawable/icon_branding</item>
+    </style>
+</resources>

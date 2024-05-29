@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="backgroundTransparentBottomSheetDialogFragment" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@color/windowBackgroundBottomSheetDialog</item>
+        <item name="bottomSheetStyle">@style/backgroundBottomSheetStyle</item>
+        <item name="android:windowBackgroundBlurRadius">4sp</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+</resources>

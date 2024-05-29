@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/backgroundBottomSheetDialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="36dp">
+
+    <ImageView
+        android:id="@+id/ivClose"
+        style="@style/defaultIconColor"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:padding="5dp"
+        android:src="@drawable/close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        style="@style/defaultIconColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/warning"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/brBottomIconsTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="ivClose, ivIcon" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/textTitleBottomSheet"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/brBottomIconsTop"
+        tools:text="@string/popup_default_title" />
+
+    <TextView
+        android:id="@+id/tvMessage"
+        style="@style/textMessageBottomSheet"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        tools:text="@string/popup_default_message" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btPositive"
+        style="@style/greenButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="46dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvMessage"
+        tools:text="@string/general_accept" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btNegative"
+        style="@style/greenOutlineButton"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="46dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btPositive"
+        tools:text="@string/general_cancel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

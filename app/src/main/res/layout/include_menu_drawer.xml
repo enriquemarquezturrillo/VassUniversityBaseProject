@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/clMenuDrawer"
+    style="@style/backgroundClMenuDrawer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="start"
+    android:fillViewport="true"
+    android:padding="20dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivClose"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:contentDescription="@string/general_cancel"
+            android:padding="5dp"
+            android:src="@drawable/close"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
