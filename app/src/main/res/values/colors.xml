@@ -1,5 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--General-->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="gray">#4B5563</color>
+    <color name="gray_background">#979797</color>
+    <color name="transparent">#00000000</color>
+
+    <!--Color Palette-->
+    <color name="blue235172">#235172</color>
+    <color name="blueLight15B7D0">#15B7D0</color>
+    <color name="grayLightD4D8D8">#D4D8D8</color>
+    <color name="creamF8F5BF">#F8F5BF</color>
+    <color name="black0B031E">#0B031E</color>
+    <color name="orangeC7220D">#C7220D</color>
+    <color name="orangeLightD2A14C">#D2A14C</color>
+    <color name="darker_gray">#AAAAAA</color>
+
+    <!--Elements-->
+    <color name="statusBarColor">@color/blue235172</color>
+
+    <!--General icons-->
+    <color name="iconColor">@color/white</color>
+
+    <!--BottomSheetDialog-->
+    <color name="stripeColorBottomSheetDialog">@color/gray</color>
+    <color name="windowBackgroundBottomSheetDialog">@color/black0B031E</color>
+
+
+    <!--CustomComponent-->
+    <color name="selectedCFF054">#CFF054</color>
+    <color name="notSelected2D5FBF">#2D5FBF</color>
 </resources>

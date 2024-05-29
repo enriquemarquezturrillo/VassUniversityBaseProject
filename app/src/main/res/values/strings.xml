@@ -1,3 +1,161 @@
 <resources>
+    <!-- General -->
+    <string name="general_ok">Ok</string>
+    <string name="general_accept">Aceptar</string>
+    <string name="general_cancel">Cancelar</string>
+    <string name="lorem_ipsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.</string>
+    <string name="example_string_arguments">Hola %s, tienes %.1f años</string>
+
+    <!-- Loading -->
+    <string name="loading_text">Cargando&#8230;</string>
+
+    <!-- Popup -->
+    <string name="popup_error_services_title">Estamos presentando problemas de conexión</string>
+    <string name="popup_error_services_message">Por favor intenta más tarde o usa otro de nuestros canales digitales</string>
+    <string name="popup_default_title">Aviso</string>
+    <string name="popup_default_message">Inténtelo de nuevo más tarde, muchas gracias y disculpe las molestias</string>
+
+    <!-- Buscador -->
+    <string name="finder_placeholder_hint">Buscar</string>
+
+    <!-- Bottom Menus -->
+    <string name="bottom_menu_fiat_my_transactions">Mis cuentas</string>
+    <string name="bottom_menu_fiat_my_activity">Mis movimientos</string>
+    <string name="bottom_menu_crypto_my_position">Mi posición</string>
+    <string name="bottom_menu_crypto_my_activity">Mi actividad</string>
+
+    <string name="general_sesion_expired">Tu sesión ha expirado</string>
+
+    <!-- Login -->
+    <string name="login_title_name">Hola, %1$s</string>
+    <string name="login_label_user">Usuario:</string>
+    <string name="login_label_password">Contraseña:</string>
+    <string name="login_label_forget_password">Recuperar mi contraseña</string>
+    <string name="login_button_login">Iniciar sesión</string>
+    <string name="login_button_create_account">Crear tu cuenta Crypto Friendly</string>
+    <string name="login_title_error_no_account">Ingreso incorrecto</string>
+    <string name="login_explain_error_no_account">El nombre de usuario o la contraseña no son válidos.</string>
+    <string name="login_button_try_again">Intentar de nuevo</string>
+    <string name="login_button_recovery_user_password">Recuperar usuario o contraseña</string>
+    <string name="login_access_with_fingerprint">Acceder con mi huella</string>
+    <string name="login_change_user">Cambiar de usuario</string>
+    <string name="login_title_unauthorized">Cuenta bloqueada.</string>
+    <string name="login_explain_unauthorized">Por seguridad su usuario ha sido bloqueado temporalmente.</string>
+
+    <!-- Usar Biometria -->
+    <string name="biometric_enter_title">Elige cómo iniciar sesión:</string>
+    <string name="biometric_enter_explain">CON HUELLA DIGITAL</string>
+    <string name="biometric_enter_button">CON CONTRASEÑA</string>
+    <string name="biometric_active_biometric_title">Activar login biométrico</string>
+    <string name="biometric_active_biometric_explain">Registra ahora tus datos biométricos, dando clic sobre la siguiente imagen</string>
+    <string name="biometric_active_biometric_button_other_moment">Mejor en otro momento</string>
+
+
+    <string name="general_root_title">Ingreso Incorrecto</string>
+    <string name="general_root_description">Tu dispositivo móvil no cumple los requisitos mínimos para el uso de nuestra  App Crypto.</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_title_toolbar">Dashboard</string>
+    <string name="dashboard_button_list">Listado</string>
+    <string name="dashboard_button_list_different_cells">Listado diferentes celdas</string>
+    <string name="dashboard_button_layout">Layout</string>
+    <string name="dashboard_button_users">Usuarios</string>
+    <string name="dashboard_button_rick_morty">RickMorty</string>
+    <string name="dashboard_button_custom_tab">OpenCustomTab</string>
+    <string name="dashboard_button_call_examples">Ejemplo de llamadas</string>
+    <string name="dashboard_button_shapes_area">Áreas de polígonos</string>
+    <string name="dashboard_button_example_views">Ejemplo de vistas</string>
+    <string name="dashboard_button_custom_component">Componente personalizado</string>
+    <string name="dashboard_button_navigation">Navegación</string>
+
+    <!-- List -->
+    <string name="list_title_toolbar">Listado</string>
+
+    <!-- List differents cells-->
+    <string name="list_different_cells_title_toolbar">Celdas diferentes</string>
+
+    <!-- Layout-->
+    <string name="layout_title_toolbar">Layout</string>
+    <string name="layout_title">Super Diseño</string>
+    <string name="layout_person_description_label">"Descripción: "</string>
+    <string name="layout_person_hobbies_label">"Hobbies: "</string>
+    <string name="layout_person_years_label">"Edad: "</string>
+    <string name="layout_person_sex_label">"Sexo: "</string>
+
+    <!-- List Users-->
+    <string name="list_users_title_toolbar">Listado Usuarios</string>
+
+    <!-- User detail-->
+    <string name="user_detail_title_toolbar">Usuario</string>
+    <string name="user_detail_id">"Id:"</string>
+    <string name="user_detail_name">"Name:"</string>
+    <string name="user_detail_surname">"Apellido:"</string>
+    <string name="user_detail_job">"Trabajo:"</string>
+    <string name="user_detail_company">"Compañia:"</string>
+    <string name="user_detail_salary">"Salario:"</string>
+    <string name="user_detail_tax">"Impuestos:"</string>
+    <string name="user_detail_formation">"Formación:"</string>
+    <string name="user_detail_total">"Total:"</string>
+    <string name="user_detail_bt_async">Async</string>
+    <string name="user_detail_bt_deffered">Deff</string>
+    <string name="user_detail_bt_completabled">CDeff</string>
+    <string name="user_detail_bt_flows">Flows</string>
+
+    <!-- RickMorty-->
+    <string name="rick_morty_title_toolbar">RickMorty</string>
+    <string name="rick_morty_button_request_character">Solicitar nombre personaje</string>
+    <string name="rick_morty_hint_id_character">Id personaje</string>
+
+    <!-- Calls example-->
+    <string name="calls_title_toolbar">Calls</string>
+
+    <!-- Shapes-->
+    <string name="shapes_title_toolbar">Polígonos</string>
+    <string name="shapes_detail_title_toolbar">Polígono detalle</string>
+    <string name="shapes_circle">Circulo</string>
+    <string name="shapes_square">Cuadrado</string>
+    <string name="shapes_pentagon">Pentágono</string>
+    <string name="shapes_triangle">Triángulo</string>
+    <string name="shapes_detail_form_title">Introduzca los datos:</string>
+    <string name="shapes_detail_radius">radio: </string>
+    <string name="shapes_detail_side">lado: </string>
+    <string name="shapes_detail_apothem">apotema: </string>
+    <string name="shapes_detail_base">base: </string>
+    <string name="shapes_detail_height">altura: </string>
+    <string name="shapes_detail_button_get_area">Calcular</string>
+    <string name="shapes_detail_result_area">Area: </string>
+    <string name="shapes_detail_result_perimeter">Perímetro: </string>
+    <string name="shapes_detail_result_perimeter_nan">No podemos calcular el perímetro con la información proporcionada</string>
+    <string name="shapes_detail_description_area">Descripción area: </string>
+    <string name="shapes_detail_hint_data">Introduzca un valor</string>
+
+    <!-- Example Views-->
+    <string name="example_views_title_toolbar">Ejemplo de vistas</string>
+    <string name="example_views_label">Para añadir a la tabla</string>
+    <string name="example_views_hint">Escribe algo</string>
+    <string name="example_views_label_switch">Versión extendida</string>
+    <string name="example_views_add">Añadir</string>
+
+    <!-- Custom Component-->
+    <string name="custom_component_title_toolbar">Componente Personalizado</string>
+    <string name="custom_component_label_option_one">Opción 1</string>
+    <string name="custom_component_label_option_two">Opción 2</string>
+    <string name="custom_component_label_option_three">Opción 3</string>
+    <string name="custom_component_content_description_icon_show_hide">Icono para mostrar/ocultar el componente nativo</string>
+
+    <!-- Navigations-->
+    <string name="navigation_fragment_a">A</string>
+    <string name="navigation_fragment_b">B</string>
+    <string name="navigation_fragment_c">C</string>
+    <string name="navigation_fragment_d">D</string>
+    <string name="navigation_fragment_e">Resultados</string>
+    <string name="navigation_fragment_f">Clasificación</string>
+    <string name="navigation_nav_b">Navegar a B</string>
+    <string name="navigation_nav_c">Navegar a C</string>
+    <string name="navigation_nav_d">Navegar a D</string>
+    <string name="navigation_nav_d_back_a">Navegar a D, back A</string>
+    <string name="navigation_nav_d_back_exit">Navegar a D, back Exit</string>
+    <string name="navigation_nav_e">Navegar a E</string>
+    <string name="navigation_nav_f">Navegar a F</string>
 
 </resources>

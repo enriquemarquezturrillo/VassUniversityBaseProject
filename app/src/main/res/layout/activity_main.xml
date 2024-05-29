@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<com.vasscompany.vassuniversitybaseproject.ui.customview.FullDrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/dlDashboard"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:fitsSystemWindows="false"
+    tools:openDrawer="start"
+    style="@style/bgDiagonal2d5fbf_062256">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <include
+        android:id="@+id/clContent"
+        layout="@layout/include_main_activity_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include
+        android:id="@+id/clMenuDrawer"
+        layout="@layout/include_menu_drawer"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_gravity="start" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</com.vasscompany.vassuniversitybaseproject.ui.customview.FullDrawerLayout>
