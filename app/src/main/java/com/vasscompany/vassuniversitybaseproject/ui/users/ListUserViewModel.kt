@@ -5,6 +5,7 @@ import androidx.lifecycle.viewModelScope
 import com.vasscompany.vassuniversitybaseproject.data.domain.model.users.UserModel
 import com.vasscompany.vassuniversitybaseproject.data.repository.encryptedpreferences.EncryptedSharedPreferencesManager
 import com.vasscompany.vassuniversitybaseproject.data.session.DataUserSession
+import com.vasscompany.vassuniversitybaseproject.data.usecases.userslist.GetUserListUseCase
 import com.vasscompany.vassuniversitybaseproject.ui.base.BaseViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
@@ -19,6 +20,7 @@ class ListUserViewModel @Inject constructor(
     savedStateHandle: SavedStateHandle,
     dataUserSession: DataUserSession,
     encryptedSharedPreferencesManager: EncryptedSharedPreferencesManager,
+    private val getUserListUseCase: GetUserListUseCase
 ) : BaseViewModel(savedStateHandle, dataUserSession, encryptedSharedPreferencesManager) {
 
     private val usersListMutableSharedFlow: MutableSharedFlow<ArrayList<UserModel>> = MutableStateFlow(arrayListOf())
@@ -26,9 +28,9 @@ class ListUserViewModel @Inject constructor(
 
     fun getUsers() {
         viewModelScope.launch(Dispatchers.IO) {
-            val userList = arrayListOf<UserModel>()
-            //TODO kiketurry logica para traer los datos y no enviar lista vacia.
-            usersListMutableSharedFlow.emit(userList)
+            getUserListUseCase.invoke().collect { userList ->
+                usersListMutableSharedFlow.emit(userList)
+            }
         }
     }
 }

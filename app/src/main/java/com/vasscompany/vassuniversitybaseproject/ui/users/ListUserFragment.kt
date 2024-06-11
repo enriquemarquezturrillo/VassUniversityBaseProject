@@ -1,6 +1,7 @@
 package com.vasscompany.vassuniversitybaseproject.ui.users
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,6 +11,7 @@ import com.vasscompany.vassuniversitybaseproject.R
 import com.vasscompany.vassuniversitybaseproject.data.domain.model.users.UserModel
 import com.vasscompany.vassuniversitybaseproject.databinding.FragmentUsersListBinding
 import com.vasscompany.vassuniversitybaseproject.ui.base.BaseFragment
+import com.vasscompany.vassuniversitybaseproject.ui.extensions.TAG
 import com.vasscompany.vassuniversitybaseproject.ui.extensions.toastLong
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
@@ -46,6 +48,7 @@ class ListUserFragment : BaseFragment<FragmentUsersListBinding>() {
 
     private fun updateList(userList: ArrayList<UserModel>) {
         //TODO kiketurry refrescar la lista con los usuario nuevos.
+        Log.d(TAG, "l> userlist size: ${userList.size}")
     }
 
     override fun viewCreatedAfterSetupObserverViewModel(view: View, savedInstanceState: Bundle?) {
