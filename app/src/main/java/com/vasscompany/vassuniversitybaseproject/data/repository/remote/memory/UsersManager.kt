@@ -33,10 +33,4 @@ class UsersManager @Inject constructor() {
         Log.d(TAG, "l> hacemos un return del flow con ${users.size} elementos")
         return flow { emit(users) }
     }
-
-
-    fun getUsersList(): ArrayList<UserModel> {
-        Log.d(TAG, "l> hacemos un return del flow con ${users.size} elementos")
-        return users
-    }
 }
