@@ -52,6 +52,7 @@ class ListUserFragment : BaseFragment<FragmentUsersListBinding>() {
     }
 
     override fun viewCreatedAfterSetupObserverViewModel(view: View, savedInstanceState: Bundle?) {
+        listUserViewModel.getUsersFlow()
         listUserViewModel.getUsers()
     }
 

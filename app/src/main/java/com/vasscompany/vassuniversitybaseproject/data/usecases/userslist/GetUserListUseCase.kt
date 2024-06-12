@@ -6,7 +6,11 @@ import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 
 class GetUserListUseCase @Inject constructor(private val dataProviderBaseProject: DataProviderBaseProject) {
-    operator fun invoke(): Flow<ArrayList<UserModel>> {
+    fun getUsersByFlow(): Flow<ArrayList<UserModel>> {
+        return dataProviderBaseProject.getUsersListFlow()
+    }
+
+    fun getUsers(): ArrayList<UserModel> {
         return dataProviderBaseProject.getUsersList()
     }
 }

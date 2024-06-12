@@ -18,7 +18,11 @@ class DataProviderBaseProject @Inject constructor(
         return remoteDataSourceKigii.getListPokemon(limit, offset)
     }
 
-    override fun getUsersList(): Flow<ArrayList<UserModel>> {
-        return usersManager.getUsers()
+    override fun getUsersListFlow(): Flow<ArrayList<UserModel>> {
+        return usersManager.getUsersFlow()
+    }
+
+    override fun getUsersList(): ArrayList<UserModel> {
+        return usersManager.getUsersList()
     }
 }

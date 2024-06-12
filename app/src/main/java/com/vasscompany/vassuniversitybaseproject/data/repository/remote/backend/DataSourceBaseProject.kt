@@ -11,6 +11,8 @@ interface DataSourceBaseProject {
     fun getListPokemon(limit: Int, offset: Int): Flow<BaseResponse<GetListPokemonModel>>
 
     //Users List
-    fun getUsersList(): Flow<ArrayList<UserModel>>
+    fun getUsersListFlow(): Flow<ArrayList<UserModel>>
+
+    fun getUsersList(): ArrayList<UserModel>
 
 }
