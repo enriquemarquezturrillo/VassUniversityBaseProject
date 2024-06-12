@@ -9,8 +9,4 @@ class GetUserListUseCase @Inject constructor(private val dataProviderBaseProject
     fun getUsersByFlow(): Flow<ArrayList<UserModel>> {
         return dataProviderBaseProject.getUsersListFlow()
     }
-
-    fun getUsers(): ArrayList<UserModel> {
-        return dataProviderBaseProject.getUsersList()
-    }
 }

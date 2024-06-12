@@ -24,6 +24,4 @@ class RemoteDataSourceBaseProject @Inject constructor(private val callApiService
     }
 
     override fun getUsersListFlow(): Flow<ArrayList<UserModel>> = flow {}
-
-    override fun getUsersList(): ArrayList<UserModel> = arrayListOf()
 }

@@ -21,8 +21,4 @@ class DataProviderBaseProject @Inject constructor(
     override fun getUsersListFlow(): Flow<ArrayList<UserModel>> {
         return usersManager.getUsersFlow()
     }
-
-    override fun getUsersList(): ArrayList<UserModel> {
-        return usersManager.getUsersList()
-    }
 }

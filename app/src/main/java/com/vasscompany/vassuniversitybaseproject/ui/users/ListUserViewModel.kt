@@ -38,15 +38,4 @@ class ListUserViewModel @Inject constructor(
             }
         }
     }
-
-    fun getUsers() {
-        viewModelScope.launch(Dispatchers.IO) {
-            val time = System.currentTimeMillis()
-            loadingMutableSharedFlow.emit(true)
-            val users = getUserListUseCase.getUsers()
-            usersListMutableSharedFlow.emit(users)
-            loadingMutableSharedFlow.emit(false)
-            Log.d(TAG, "l> Recibo userList con ${users.size} elementos ${System.currentTimeMillis() - time}ms")
-        }
-    }
 }
