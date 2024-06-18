@@ -31,6 +31,7 @@ class DashboardFragment : BaseFragment<FragmentDashboardBinding>(), View.OnClick
         binding?.btListDifferentCells?.setOnClickListener(this)
         binding?.btCustomTab?.setOnClickListener(this)
         binding?.btNavigation?.setOnClickListener(this)
+        binding?.btUsersList?.setOnClickListener(this)
     }
 
     override fun observeViewModel() = Unit
@@ -58,6 +59,10 @@ class DashboardFragment : BaseFragment<FragmentDashboardBinding>(), View.OnClick
 
             R.id.btNavigation -> {
                 findNavController().navigate(DashboardFragmentDirections.actionDashboardFragmentToAfragment())
+            }
+
+            R.id.btUsersList -> {
+                findNavController().navigate(DashboardFragmentDirections.actionDashboardFragmentToUserslist())
             }
         }
     }

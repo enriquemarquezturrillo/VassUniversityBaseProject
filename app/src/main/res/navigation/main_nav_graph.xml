@@ -19,7 +19,25 @@
         <action
             android:id="@+id/action_dashboardFragment_to_afragment"
             app:destination="@id/afragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_userslist"
+            app:destination="@id/listUserFragment" />
     </fragment>
+
+    <fragment
+        android:id="@+id/listUserFragment"
+        android:name="com.vasscompany.vassuniversitybaseproject.ui.users.ListUserFragment"
+        android:label="ListUserFragment">
+
+        <action
+            android:id="@+id/action_listUserFragment_to_addUser"
+            app:destination="@id/addUserFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addUserFragment"
+        android:name="com.vasscompany.vassuniversitybaseproject.ui.users.add.AddUserFragment"
+        android:label="AddUserFragment" />
 
     <fragment
         android:id="@+id/listFragment"
