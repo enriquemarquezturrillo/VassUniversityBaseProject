@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.vasscompany.vassuniversitybaseproject.R
 import com.vasscompany.vassuniversitybaseproject.data.domain.model.users.UserModel
@@ -20,10 +21,8 @@ import kotlinx.coroutines.launch
 
 @AndroidEntryPoint
 class ListUserFragment : BaseFragment<FragmentUsersListBinding>() {
-
-    val listUserViewModel: ListUserViewModel by viewModels()
-    val usersAdapter = UsersAdapter()
-
+    private val listUserViewModel: ListUserViewModel by viewModels()
+    private val usersAdapter = UsersAdapter()
 
     override fun inflateBinding() {
         binding = FragmentUsersListBinding.inflate(layoutInflater)
@@ -31,6 +30,9 @@ class ListUserFragment : BaseFragment<FragmentUsersListBinding>() {
 
     override fun createViewAfterInflateBinding(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?) {
         configRecyclerView()
+        binding?.btGoToAddUser?.setOnClickListener {
+            findNavController().navigate(ListUserFragmentDirections.actionListUserFragmentToAddUser())
+        }
     }
 
     private fun configRecyclerView() {

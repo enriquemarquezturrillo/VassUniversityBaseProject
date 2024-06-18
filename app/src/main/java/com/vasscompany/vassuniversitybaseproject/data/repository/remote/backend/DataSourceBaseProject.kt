@@ -13,4 +13,5 @@ interface DataSourceBaseProject {
     //Users List
     fun getUsersListFlow(): Flow<ArrayList<UserModel>>
 
+    fun addUserFlow(userModel: UserModel): Flow<Boolean>
 }

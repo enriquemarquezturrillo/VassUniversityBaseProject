@@ -9,4 +9,6 @@ class GetUserListUseCase @Inject constructor(private val dataProviderBaseProject
     fun getUsersByFlow(): Flow<ArrayList<UserModel>> {
         return dataProviderBaseProject.getUsersListFlow()
     }
+
+    fun addUserByFlow(userModel: UserModel): Flow<Boolean> = dataProviderBaseProject.addUserFlow(userModel)
 }
